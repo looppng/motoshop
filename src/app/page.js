@@ -1,95 +1,171 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import { useState } from "react";
 
 export default function Home() {
+  const carParts = [
+    "Engine",
+    "Transmission",
+    "Alternator",
+    "Radiator",
+    "Brake Pads",
+    "Shock Absorbers",
+    "Air Filter",
+    "Oil Filter",
+    "Fuel Pump",
+    "Battery",
+    "Spark Plugs",
+    "Exhaust System",
+    "Clutch",
+    "Headlights",
+    "Tail Lights",
+    "Mirrors",
+    "Wipers",
+    "Tires",
+    "Seat Belts",
+    "Steering Wheel",
+    "Dashboard",
+    "Air Conditioning",
+    "Carburetor",
+    "Turbocharger",
+    "Water Pump",
+    "Timing Belt",
+    "Suspension",
+    "Axle",
+    "Drive Shaft",
+    "Catalytic Converter",
+    "Fuel Injector",
+    "Camshaft",
+    "Crankshaft",
+    "Pistons",
+    "Cylinder Head",
+    "Differential",
+    "Wheel Bearings",
+    "Brake Discs",
+    "Master Cylinder",
+    "Ignition Coil",
+    "Starter Motor",
+    "Alternator Belt",
+    "Serpentine Belt",
+    "Power Steering Pump",
+    "Radiator Fan",
+    "Thermostat",
+    "Window Regulator",
+    "Door Handles",
+    "Hood",
+    "Trunk Lid",
+    "Fenders",
+    "Bumpers",
+    "Grille",
+    "Floor Mats",
+    "Roof Rack",
+    "Spoiler",
+    "Sunroof",
+    "Windshield",
+    "Side Windows",
+    "Rear Window",
+    "Antenna",
+    "GPS System",
+    "Audio System",
+    "Speakers",
+    "Amplifier",
+    "Subwoofer",
+    "USB Charger",
+    "Phone Mount",
+    "Cup Holder",
+    "Gear Shift Knob",
+    "Pedals",
+    "Seat Covers",
+    "Steering Wheel Cover",
+    "Car Alarm",
+    "Parking Sensors",
+    "Backup Camera",
+    "License Plate Holder",
+    // "Tow Hitch",
+    // "Jack",
+    // "Lug Wrench",
+    // "Spare Tire",
+    // "Tool Kit",
+    // "First Aid Kit",
+    // "Emergency Flares",
+    // "Fire Extinguisher",
+    // "Jumper Cables",
+    // "Tire Inflator",
+    // "Tire Pressure Gauge",
+    // "Snow Chains",
+    // "Car Cover",
+    // "Cleaning Supplies",
+    // "Wax",
+    // "Polish",
+    // "Detailing Brush",
+    // "Microfiber Cloth",
+    // "Vacuum Cleaner",
+    // "Air Freshener",
+    // "Sun Shade",
+    // "Dash Cam",
+    // "OBD2 Scanner",
+    // "Fuel Additives",
+    // "Brake Fluid",
+    // "Engine Oil",
+    // "Coolant",
+    // "Transmission Fluid",
+    // "Power Steering Fluid",
+    // "Washer Fluid",
+  ];
+
+  const [showAll, setShowAll] = useState(false);
+  const initialDisplayCount = 15;
+
+  const handleShowAll = () => {
+    setShowAll(true);
+  };
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+    <main>
+      <section className="bg-secondary py-5">
+        <div className="container">
+          <h1 className="text-light">
+            Motorbike parts online from local latvian sellers
+          </h1>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Choose from competitively priced used motorbike parts in one
+            marketplace
           </p>
-        </a>
-      </div>
+          <div className="d-flex gap-2">
+            <div>14-day free returns guaranteed</div>
+            <div>Delivery in all of EU</div>
+          </div>
+        </div>
+      </section>
+      <section className="py-5">
+        <div className="container">
+          <h2>Available Parts</h2>
+          <div>
+            <ul className="d-flex flex-md-row p-0 gap-5 flex-wrap">
+              {(showAll
+                ? carParts
+                : carParts.slice(0, initialDisplayCount)
+              ).map((part, index) => (
+                <li key={index}>
+                  <a>
+                    <button>
+                      <img src="https://picsum.photos/id/237/200/200" alt="" />
+                      <p>{part}</p>
+                    </button>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            {!showAll && (
+              <div className="mt-3">
+                <button className="btn btn-primary" onClick={handleShowAll}>
+                  Show All Categories
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
