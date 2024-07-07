@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { Oswald } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const oswald = Oswald({ subsets: ["latin"] });
 
 export const metadata = {
   title: "MotoShop",
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={oswald.className}>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet"

@@ -1,3 +1,14 @@
+:root {
+    --primary_color: #293241;
+    --secondary_color: #e0fbfc;
+    --accent_color1: #ee6c4d;
+    --accent_color2: #3d5a80;
+
+    /*--h1: bold 54px/64px;*/
+    /*--h2: bold 36px/36px;*/
+    /*--h3: bold 24px/30px;*/
+}
+
 /*
 CSS RESET
 */
@@ -49,3 +60,55 @@ table {
 /*
 CSS RESET END
 */
+
+.heading1 {
+    color: var(--secondary_color);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.primary_color {
+    color: var(--primary_color);
+}
+
+.bg_primary_color {
+    background-color: var(--accent_color1);
+}
+
+.secondary_color {
+    color: var(--secondary_color);
+}
+
+.hero-image {
+    background-image: url("https://www.akhia.com/hubfs/Photography/BenThinkingSection_Header.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-image-content {
+    position: relative;
+    z-index: 2;
+}
+
+.card_hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card_hover:hover {
+    transform: scale(1.05);
+}
+
