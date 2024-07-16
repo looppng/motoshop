@@ -3,9 +3,9 @@ import React from "react";
 import brandList from "@/db/brands";
 const BrandList = () => {
   return (
-    <section className="container border-bottom">
+    <section className="container border-bottom my-3">
       <h1>Search by brand</h1>
-      <ul className="d-flex p-0 gap-1 flex-wrap">
+      <ul className="d-flex p-0 gap-3 flex-wrap">
         {brandList.slice(0, 20).map((brand, index) => (
           <li key={index}>
             <a>
