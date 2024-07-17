@@ -1,6 +1,8 @@
 import carParts from "@/db/parts";
 
-const PartsList = ({ showAll, initialDisplayCount, handleShowAll }) => {
+const PartsList = ({ showAll, handleShowAll }) => {
+  const initialDisplayCount = 15;
+
   return (
     <section className="py-2">
       <div className="container">

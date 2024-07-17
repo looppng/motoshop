@@ -11,7 +11,6 @@ import Footer from "@/components/Footer/footer";
 
 export default function Home() {
   const [showAll, setShowAll] = useState(false);
-  const initialDisplayCount = 15;
 
   const handleShowAll = () => {
     setShowAll(true);
@@ -22,11 +21,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <BrandList />
-      <PartsList
-        showAll={showAll}
-        initialDisplayCount={initialDisplayCount}
-        handleShowAll={handleShowAll}
-      />
+      <PartsList showAll={showAll} handleShowAll={handleShowAll} />
       <AboutUs />
       <Footer />
     </main>
