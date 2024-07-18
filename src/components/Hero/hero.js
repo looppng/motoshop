@@ -16,8 +16,11 @@ const Hero = () => {
           Motorcycle parts search
         </p>
         <div className="row m-0">
-          <form className="d-flex flex-lg-row flex-md-column p-0" role="search">
-            <div className="col-lg-3 col-md-12">
+          <form
+            className="d-flex flex-lg-row flex-md-column flex-column p-0"
+            role="search"
+          >
+            <div className="col-lg-3 col-md-12 col-12">
               <input
                 className="input rounded-0"
                 type="search"
@@ -25,7 +28,7 @@ const Hero = () => {
                 aria-label="Search"
               />
             </div>
-            <div className="col-lg-3 col-md-12">
+            <div className="col-lg-3 col-md-12 col-12">
               <input
                 className="input rounded-0"
                 type="search"
@@ -33,7 +36,7 @@ const Hero = () => {
                 aria-label="Search"
               />
             </div>
-            <div className="col-lg-3 col-md-12">
+            <div className="col-lg-3 col-md-12 col-12">
               <input
                 className="input rounded-0"
                 type="search"
@@ -41,7 +44,7 @@ const Hero = () => {
                 aria-label="Search"
               />
             </div>
-            <div className="col-lg-2 col-md-12">
+            <div className="col-lg-2 col-md-12 col-12">
               <input
                 className="input rounded-0"
                 type="search"
@@ -49,7 +52,7 @@ const Hero = () => {
                 aria-label="Search"
               />
             </div>
-            <div className="col-lg-1 col-md-12">
+            <div className="col-lg-1 col-md-12 col-12">
               <button className="w-100 h-100" type="submit">
                 <Image width={20} height={20} alt="Search" src="/find.svg" />
               </button>

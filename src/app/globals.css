@@ -66,28 +66,13 @@ CSS RESET END
     color: var(--secondary_color);
 }
 
-
+.heading2 {
+    font-size: 1.5rem;
+    color: var(--primary_color);
+}
 
 .pe-40 {
     padding-right: 0;
-}
-
-/* Medium screens (md and up) */
-@media only screen and (min-width: 768px) {
-    .heading1 {
-        font-size: 3rem;
-    }
-}
-
-/* Large screens (lg and up) */
-@media only screen and (min-width: 992px) {
-    .heading1 {
-        font-size: 4rem;
-    }
-
-    .pe-40 {
-        padding-right: 40%;
-    }
 }
 
 .primary_color {
@@ -183,6 +168,74 @@ CSS RESET END
 
 .card_hover:hover {
     transform: scale(1.05);
+}
+
+.brand-grid {
+    display: grid;
+    position: relative;
+    justify-items: center;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.brand-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 548px) {
+    .brand-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    }
+}
+
+@media only screen and (min-width: 548px) {
+    .brand-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+}
+
+/* Medium screens (md and up) */
+@media only screen and (min-width: 768px) {
+    .heading1 {
+        font-size: 3rem;
+    }
+
+    .brand-grid {
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+    }
+}
+
+/* Large screens (lg and up) */
+@media only screen and (min-width: 922px) {
+    .heading1 {
+        font-size: 4rem;
+    }
+
+    .pe-40 {
+        padding-right: 40%;
+    }
+
+    .brand-grid {
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+    }
+}
+
+
+/* XLarge screens (xl and up) */
+@media only screen and (min-width: 1200px) {
+    .brand-grid {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
 }
 
 
