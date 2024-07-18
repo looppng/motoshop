@@ -1,4 +1,5 @@
 import carParts from "@/db/parts";
+import Image from "next/image";
 
 const PartsList = ({ showAll, handleShowAll }) => {
   const initialDisplayCount = 15;
@@ -13,7 +14,12 @@ const PartsList = ({ showAll, handleShowAll }) => {
               <li key={index}>
                 <a>
                   <button className="align-items-center p-0 border border-0 card_hover">
-                    <img src="https://picsum.photos/id/237/200/200" alt="" />
+                    <Image
+                      width={200}
+                      height={200}
+                      src="https://picsum.photos/id/237/200/200"
+                      alt="Part"
+                    />
                     <p className="mb-0 p-3">{part}</p>
                   </button>
                 </a>

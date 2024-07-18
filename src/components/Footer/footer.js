@@ -51,14 +51,13 @@ const Footer = () => {
               <a href="">Suzuki parts</a>
               <a href="">BMW parts</a>
               <a href="">Ducati parts</a>
-              <a href="">Ducati parts</a>
               <a href="">Triumph parts</a>
               <a href="">KTM parts</a>
             </p>
           </div>
         </div>
       </div>
-      <div className="row bg-primary">
+      <div className="row bg-primary container">
         <div className="col-12 d-inline-flex flex-column justify-content-center align-items-center">
           <p>2024© MotoShop All rights reserved</p>
           <p>

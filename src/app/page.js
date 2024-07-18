@@ -22,8 +22,8 @@ export default function Home() {
       <Hero />
       <BrandList />
       <PartsList showAll={showAll} handleShowAll={handleShowAll} />
-      <AboutUs />
-      <Footer />
+      {/*<AboutUs />*/}
+      {/*<Footer />*/}
     </main>
   );
 }
