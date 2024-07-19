@@ -102,6 +102,22 @@ CSS RESET END
     cursor: pointer;
 }
 
+.button-secondary {
+    display: inline-block;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+
+    color: var(--primary_color);
+    background-color: transparent;
+    border-color: var(--primary_color);
+
+    &:hover {
+        border-color: var(--primary_color);
+        background-color: #ced4da;
+    }
+}
+
 .button-primary {
     color: #fff;
     background-color: #fff;
@@ -185,6 +201,10 @@ CSS RESET END
     align-items: center;
 }
 
+.brand-item-span-2 {
+    grid-column: span 2;
+}
+
 .brand-image {
     width: 100%;
     height: auto;
@@ -195,6 +215,10 @@ CSS RESET END
     .brand-grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
 
+    }
+
+    .brand-item-span-2 {
+        grid-column: span 4;
     }
 }
 
@@ -229,7 +253,6 @@ CSS RESET END
         grid-template-columns: repeat(8, minmax(0, 1fr));
     }
 }
-
 
 /* XLarge screens (xl and up) */
 @media only screen and (min-width: 1200px) {

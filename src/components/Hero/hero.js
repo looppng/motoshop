@@ -53,19 +53,22 @@ const Hero = () => {
               />
             </div>
             <div className="col-lg-1 col-md-12 col-12">
-              <button className="w-100 h-100" type="submit">
+              <button className="w-100 h-100 button" type="submit">
                 <Image width={20} height={20} alt="Search" src="/find.svg" />
+                Search
               </button>
             </div>
           </form>
         </div>
         <div className="d-flex flex-lg-row flex-md-column flex-column gap-lg-4 gap-md-1 pt-5">
-          <div>
+          <div className="d-inline-flex align-items-center gap-2">
+            <Image width={20} height={20} alt="Refresh" src="/refresh.svg" />
             <p className="m-0 secondary_color fw-lighter">
               14-day free returns guaranteed
             </p>
           </div>
-          <div>
+          <div className="d-inline-flex align-items-center gap-2">
+            <Image width={20} height={20} alt="Delivery" src="/delivery.svg" />
             <p className="m-0 secondary_color fw-lighter">
               Delivery in all of Latvia
             </p>
