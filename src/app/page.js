@@ -22,7 +22,7 @@ export default function Home() {
       <Hero />
       <BrandList />
       <PartsList showAll={showAll} handleShowAll={handleShowAll} />
-      {/*<AboutUs />*/}
+      <AboutUs />
       {/*<Footer />*/}
     </main>
   );

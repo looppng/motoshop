@@ -2,17 +2,17 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section className="border-bottom mb-5 p-0 py-3">
+    <section className="pt-4 pb-5 border border-bottom mb-3 px-3">
       <div className="container">
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="col-12 py-2">
-            <h1>
+          <div className="col-12 py-2 ps-0">
+            <h1 className="fw-normal">
               MotoShop - the largest used motorcycle parts portal in Latvia
             </h1>
           </div>
-          <div className="col-12 col-md-6 justify-content-center">
+          <div className="col-lg-6 col-md-6 col-12 ps-0 fs-5 fw-light">
             <p>
-              MotoShop – it has never been easier to find and purchase a
+              <b>MotoShop</b> – it has never been easier to find and purchase a
               required motorcycle part!
             </p>
             <p>
@@ -21,7 +21,7 @@ const AboutUs = () => {
               and model, or simply enter the part number, the rest is easy.
             </p>
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-lg-6 col-md-6 col-12 ps-0 fs-5 fw-light">
             <p>
               Simply complete payment and the part will be shipped out! It has
               never been easier to purchase car parts online.
